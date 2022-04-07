@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Cormorant+Upright:wght@600;700&family=Montserrat:wght@300;400;500;800&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
+
+@layer components {
+
+    .line {
+        @apply after:absolute after:inline-block after:-bottom-1 after:left-0 after:w-1/2 after:h-[3px] after:bg-gradient-to-r after:from-[#BF953F] after:via-[#FCF6BA] after:to-[#B38728] after:rounded-sm
+        
+    }
+
+    .btn{
+        @apply bg-transparent border p-5 py-3 tracking-wider text-white font-bold uppercase  hover:bg-[#00141a]
+        hover:transition-all
+    }
+
+    .aboutBorder{
+        @apply border-b border-lGray pb-3
+    }
+
+    .aboutText{
+        @apply text-white md:text-xl 
+    }
+
+    .workDescription {
+        @apply text-lGray text-base font-mon leading-7 bg-primary p-9 mb-[2rem] shadow-lg
+    }
+
+}
+
+@layer base {
+    html {
+      font-family: 'Cordo', 'Montserrat', sans-serif;;
+    }
+  }
+  
+  /* hover:bg-gradient-to-r hover:from-[#BF953F] hover:via-[#FCF6BA] hover:to-[#B38728] hover:border-[#BF953F] hover:text-black */
+
+
