@@ -16,9 +16,14 @@ html{
         
     }
 
+    .btn1{
+        @apply bg-transparent border border-gold/70 p-5 py-3 tracking-wider text-gold/70 font-bold uppercase  hover:bg-gold/70 hover:text-black
+        hover:transition-all duration-75
+    }
+
     .btn{
-        @apply bg-transparent border p-5 py-3 tracking-wider text-white font-bold uppercase  hover:bg-[#00141a]
-        hover:transition-all
+        @apply bg-transparent border border-lGray p-5 py-3 tracking-wider text-lGray font-bold uppercase  hover:text-black hover:bg-lGray
+        hover:transition-all duration-75
     }
 
     .aboutBorder{
@@ -30,7 +35,11 @@ html{
     }
 
     .workDescription {
-        @apply text-lGray text-base font-mon leading-7 bg-primary p-9 mb-[2rem] shadow-lg
+        @apply text-lGray text-base font-mon leading-7 p-4 bg-primary lg:p-9 mb-[2rem] shadow-lg
+    }
+
+    .projectName {
+        @apply text-2xl font-bold mb-6 md:text-3xl lg:text-[2.8rem]  text-white md:leading-[2.8rem] font-mon lg:text-right
     }
 
 }

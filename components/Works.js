@@ -6,6 +6,8 @@ import MoreProjects from './MoreProjects';
 import WorkBtns from './WorkBtns';
 
 export default function Works({works, subWorks}) {
+
+ // console.log(works)
   
   return (
     <section id='works' className="w-screen px-[4vw] lg:px-0 py-[5vw] bg-dGray mix-blend-darken bg-cover ">
@@ -30,7 +32,7 @@ export default function Works({works, subWorks}) {
               {/* details */}
               <div className="gap-y-8 lg:row-start-1 lg:col-start-5 lg:col-span-5 lg:self-center lg:justify-self-end grid lg:gap-y-[5rem]  ">
                 <div className="lg:justify-self-end">
-                  <h2 className='text-xl font-bold mb-6 md:text-3xl lg:text-4xl text-white font-mon lg:text-right'>
+                  <h2 className='projectName lg:text-right'>
                     {work?.projectName}
                   </h2>
                   <p className="workDescription">
@@ -73,7 +75,7 @@ export default function Works({works, subWorks}) {
 
               <div className="gap-y-8 lg:col-start-1 lg:col-span-3 lg:self-center lg:row-start-1 grid lg:gap-y-[5rem] relative z-10 ">
                 <div className="lg:justify-self-start">
-                  <h2 className='text-xl mb-6 md:text-3xl lg:text-4xl text-white font-mon text-left font-bold'>
+                  <h2 className='text-left projectName'>
                     {work?.projectName}
                    
                   </h2>
@@ -120,7 +122,7 @@ export default function Works({works, subWorks}) {
               {/* details */}
               <div className="gap-y-8 lg:row-start-1 lg:col-start-5 lg:col-span-5 lg:self-center lg:justify-self-end grid lg:gap-y-[5rem]   ">
                 <div className="lg:justify-self-end">
-                  <h2 className='text-xl font-bold mb-6 md:text-3xl lg:text-4xl text-white font-mon lg:text-right'>
+                  <h2 className='projectName'>
                     {work?.projectName}
                   </h2>
                   <p className="workDescription">

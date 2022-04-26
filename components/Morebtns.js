@@ -3,7 +3,7 @@
 export default function Morebtns({code, title, skills, img, key}) {
   return (
     <div 
-      className="hidden inset-0 cursor-pointer absolute z-10 group-hover:inline-flex flex-col gap-y-8 justify-center items-center gap-x-5  hover:bg-primary hover:bg-opacity-90 hover:brightness-[.7]"
+      className="hidden inset-0 cursor-pointer absolute z-10 group-hover:inline-flex flex-col gap-y-2 justify-center items-center gap-x-5  hover:bg-primary hover:bg-opacity-90 hover:brightness-[.7]"
       key={key}
     >
         <p className="text-white font-bold text-base md:text-2xl">
@@ -14,23 +14,27 @@ export default function Morebtns({code, title, skills, img, key}) {
             <p className="text-white text-sm lg:text-base">{skill.skill}</p>
           ))}
         </div>
-        <div className="flex gap-8">
+        <div className="flex gap-8 mt-10 items-center">
     
             <a 
               href={img} 
               target="_blank" 
               rel="noopener noreferrer"
-              className='inline-block text-sm md:text-base lg:text-xl text-gold border border-gold font-bold outline-none  font-cor backdrop-blur-sm  p-5 py-3 hover:bg-gold hover:text-black  '
+              aria-label="External link"
+              aria-role="button"
+              className='inline-block self-center text-sm md:text-base  text-gold border border-gold outline-none  font-cor backdrop-blur-sm py-2 px-8 hover:bg-gold hover:text-black  '
             >
-              View
+              VIEW
             </a>
             <a 
               href={code} 
               target="_blank" 
               rel="noopener noreferrer"
-              className='text-sm md:text-base lg:text-xl text-white font-cor font-bold backdrop-blur-sm  p-5 py-3 border hover:bg-white hover:text-black'
+              aria-label='Github link'
+              aria-role="button"
+              className='text-sm md:text-base text-white font-cor   backdrop-blur-sm  py-2 px-8 border hover:bg-white hover:text-black'
             >
-              Code
+              CODE
             </a>
         </div>
     </div>

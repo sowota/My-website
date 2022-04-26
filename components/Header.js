@@ -59,7 +59,7 @@ export default function Header() {
 
   const menu =[
     'home',
-    'works',
+    'work',
     'about'
   ]
 
@@ -104,7 +104,10 @@ export default function Header() {
           {menu.map((menuItem, i) =>(
                 <li key={i} className=''><a href={`#${menuItem}`} className='text-lg uppercase text-white hover:text-gold'>{menuItem}</a></li>
               ))}
-            <a href='https://github.com/sowota'>
+            <a  href='https://github.com/sowota'
+                target="_blank" 
+                rel="noopener noreferrer"
+            >
               <FiGithub className="text-white text-lg hover:text-gold hover:scale-[1.2] transition-all duration-75 cursor-pointer "/>
             </a>
           </ul>
@@ -132,7 +135,10 @@ export default function Header() {
                 </li>
               ))}
 
-            <a href='https://github.com/sowota'>
+            <a href='https://github.com/sowota'  
+               target="_blank" 
+               rel="noopener noreferrer" 
+            >
               <FiGithub className="text-white text-2xl hover:text-gold hover:scale-[1.2] transition-all duration-75 cursor-pointer "/>
             </a>
             </motion.ul>

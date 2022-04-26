@@ -11,7 +11,7 @@ import Footer from './../components/Footer';
 
 const Home = ({works, experiences, selfIntro, subWorks}) => {
 
-  
+  //console.log(works)
 
   const [isVisible, setIsVisible] = useState(false)
 

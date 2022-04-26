@@ -4,12 +4,12 @@ import { ArrowNarrowRightIcon } from '@heroicons/react/outline';
 
 export default function MoreProjects({subWorks}) {
   return (
-    <div className="flex gap-y-[5rem] gap-x-[2rem] flex-col place-content-center md:flex-row mt-[8rem] pr-[3vw]">
+    <div className="flex gap-y-[5rem] gap-x-[2rem] flex-col place-content-center md:flex-row mt-[8rem] pr-[3vw] pl-[3vw]">
         <div className="lg:w-[30%] flex-1 flex items-start gap-5 justify-center">
-            <h3 className="text-white text-2xl xl:text-4xl">
+            <h3 className="text-white leading-10 text-3xl lg:text-4xl xl:text-[2.6rem]">
                  Check Out More
             </h3>
-            <ArrowNarrowRightIcon className="hidden md:inline-block text-white w-[1.8rem] xl:w-[2.5rem]"/>
+            {/* <ArrowNarrowRightIcon className="hidden md:inline-block text-white w-[1.8rem] xl:w-[2.5rem]"/> */}
         </div>
 
         <div className='grid gap-y-6 place-content-center xl:grid-cols-2  gap-x-3 xl:gap-y-3  '>
